@@ -244,6 +244,7 @@ body {
 
 /* CARD EM FORMATO DE SMARTPHONE */
 .card-smartphone {
+    margin-top: 20px;
     width: 250px;
     /* largura perfeita */
     height: 480px;
