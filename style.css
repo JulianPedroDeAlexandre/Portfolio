@@ -145,8 +145,14 @@ body {
 }
 
 .btn {
-    background: #fff;
-    color: #0c0f1a;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.92;
+    transition: transform .2s ease, opacity .2s ease;
 }
 
 .btn:hover {
@@ -454,6 +460,7 @@ h3 {
     justify-content: center;
     gap: 16px;
     margin-top: 16px;
+    margin-bottom: 25px;
 
 }
 
@@ -520,7 +527,6 @@ footer {
 .close:hover {
     opacity: .6;
 }
-
 
 
 
