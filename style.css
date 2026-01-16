@@ -307,10 +307,15 @@ h3 {
     color: #fff;
     border-radius: 10px;
     text-decoration: none;
+    transition: transform .2s ease, opacity .2s ease;
+
 }
 
 .btn-github:hover{
     
+    transform: translateY(-3px);
+    opacity: 1;
+
 }
 
 .pill-modal {
