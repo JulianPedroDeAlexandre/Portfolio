@@ -172,7 +172,7 @@ body {
 
 /* SEÇÕES BASE */
 .section {
-    padding: 80px 12px 0 12px;
+    padding: 50px 12px 0 12px;
     background: var(--bg);
     color: #fff;
 }
@@ -310,7 +310,7 @@ body {
 h3 {
     font-size: 20px;
     text-align: center;
-    margin-top: -20px;
+    margin: -20px;
     background: linear-gradient(135deg, var(--accent-a), var(--accent-b));
     -webkit-background-clip: text;
     background-clip: text;
@@ -576,7 +576,7 @@ footer {
     scroll-behavior: smooth;
     cursor: grab;
     padding-bottom: 20px;
-}
+}   
 
 .projects-grid:active {
     cursor: grabbing;
