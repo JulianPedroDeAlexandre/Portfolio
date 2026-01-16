@@ -172,7 +172,7 @@ body {
 
 /* SEÇÕES BASE */
 .section {
-    padding: 80px 12px 0 12px;
+    padding: 50px 12px 0 12px;
     background: var(--bg);
     color: #fff;
 }
@@ -240,15 +240,11 @@ body {
 
 /* PROJETOS */
 
-.projects-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
+
 
 /* CARD EM FORMATO DE SMARTPHONE */
 .card-smartphone {
+    margin-top: 20px;
     width: 250px;
     /* largura perfeita */
     height: 480px;
@@ -315,7 +311,7 @@ body {
 h3 {
     font-size: 20px;
     text-align: center;
-    margin-top: -20px;
+    margin: -20px;
     background: linear-gradient(135deg, var(--accent-a), var(--accent-b));
     -webkit-background-clip: text;
     background-clip: text;
@@ -571,4 +567,90 @@ footer {
 }
 
 
+/* PROJETOS - CARROSSEL HORIZONTAL */
+.projects-grid {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    cursor: grab;
+    padding-bottom: 20px;
+}   
 
+.projects-grid:active {
+    cursor: grabbing;
+}
+
+.projects-grid > * {
+    flex: 0 0 auto; /* impede que os cards estiquem */
+}
+
+.projects-grid::-webkit-scrollbar {
+    display: none; /* oculta scrollbar */
+}
+
+/* --------------------------------------------------RESPONSIVIDADE-------------------------------------- */
+@media (max-width: 480px) {
+  h1 {
+    font-size: clamp(24px, 8vw, 32px);
+  }
+  h2 {
+    font-size: clamp(14px, 5vw, 18px);
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 12px;
+  }
+  .nav-links a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .card-smartphone {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px auto;
+  }
+  .card-laptop {
+    width: 95%;
+    height: auto;
+    margin: 0 auto 20px auto;
+  }
+  .card-smartphone .thumb,
+  .card-laptop .thumb-laptop {
+    height: 200px; /* altura fixa mais amigável */
+  }
+}
+@media (max-width: 480px) {
+  .projects-grid {
+    gap: 20px;
+    padding: 0 10px 20px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 8px 0 8px;
+  }
+  .section-title {
+    margin-bottom: 40px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  .avatar-wrap {
+    margin: 0 auto;
+  }
+}
