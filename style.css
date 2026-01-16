@@ -304,6 +304,7 @@ h3 {
     background-clip: text;
     color: transparent;
     cursor: pointer;
+    
 }
 .card-sobre:hover {
     opacity: .8;
@@ -453,6 +454,7 @@ footer {
     border-radius: 12px;
     position: relative; /* necessário */
     z-index: 10000; /* garante sobreposição */
+    color: #000;
 }
 
 
