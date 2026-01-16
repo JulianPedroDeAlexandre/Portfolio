@@ -240,12 +240,7 @@ body {
 
 /* PROJETOS */
 
-.projects-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
+
 
 /* CARD EM FORMATO DE SMARTPHONE */
 .card-smartphone {
@@ -568,6 +563,31 @@ footer {
 }
 .close:hover {
     opacity: .6;
+}
+
+
+/* PROJETOS - CARROSSEL HORIZONTAL */
+.projects-grid {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    cursor: grab;
+    padding-bottom: 20px;
+}
+
+.projects-grid:active {
+    cursor: grabbing;
+}
+
+.projects-grid > * {
+    flex: 0 0 auto; /* impede que os cards estiquem */
+}
+
+.projects-grid::-webkit-scrollbar {
+    display: none; /* oculta scrollbar */
 }
 
 
