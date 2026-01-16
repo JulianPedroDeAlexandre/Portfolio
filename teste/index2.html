@@ -1,21 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste2</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Desenvolvedor Front-End</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.boxicons.com/3.0.7/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>teste</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quasi corporis, hic vero sunt exercitationem nobis, libero est necessitatibus delectus explicabo, deserunt eius doloremque officiis facilis harum cum ab numquam.</p>
-    <ul>
-        <li>
-            teste
-        </li>
-        <li>
-            teste
-        </li>
-    </ul>
+    <!-- Navbar fixa -->
+    <header class="navbar">
+        <div class="nav-container">
+            <nav class="nav-links">
+                <a href="#hero">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <h1>Julian De Alexandre</h1>
+        <h2>Desenvolvedor Front-End</h2>
+        <p>Criando interfaces modernas, responsivas e experiências digitais que encantam usuários.</p>
+
+        <div class="cta">
+            <a href="#projetos" class="btn">Ver Projetos</a>
+            <a href="#contato" class="btn-outline">Entrar em Contato</a>
+        </div>
+    </section>
+
+    <!-- Sobre mim -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="sobre">
+                <div class="avatar-wrap">
+                    <div class="avatar">
+                        <img src="./img/1 (2).jpeg" alt="Foto de Julian">
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="section-title" style="text-align:left; margin-bottom:8px;">Sobre mim</h2>
+                    <p>Desenvolvedor formado em Ciência da Computação, focado em criar interfaces modernas, responsivas 
+                        e acessíveis. Apaixonado por experiência do usuário e pelo processo de transformar ideias em 
+                        soluções funcionais e visualmente atraentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section projetos">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+
+            <div class="projects-grid">
+
+                <!-- Projeto 1 -->
+                <article class="card-smartphone">
+                    <div class="thumb"
+                        style="background-image: url('./img/WhatsApp Image 2026-01-15 at 19.53.18-portrait.png');">
+                        <h3>Plataforma DeBugMe</h3>
+                    </div>
+
+                    <div class="card-info">
+                        <span class="card-sobre"
+                            onclick="openModal('Plataforma DeBugMe', 'DeBugMe é uma plataforma criada para solucionar uma demanda real em uma escola de programação, onde faltavam projetos que ajudassem os alunos a evoluir e avançar de nível constantemente. A plataforma foi pensada para ser simples, rápida e funcional.', 'https://julianpedrodealexandre.github.io/Projeto-Plataforma-DeBugMe/')">Sobre →</span>
+                    </div>
+                </article>
+
+                <!-- Projeto 2 -->
+                <article class="card-smartphone">
+                    <div class="thumb"
+                        style="background-image: url('./img/WhatsApp Image 2026-01-15 at 21.52.43-portrait.png');">
+                        <h3>To Do List</h3>
+                    </div>
+
+                    <div class="card-info">
+                        <span class="card-sobre"
+                            onclick="openModal('To Do List', 'To Do List é um sistema de gerenciamento de tarefas com níveis de prioridade, filtros e uso de localStorage para persistência.', 'https://julianpedrodealexandre.github.io/ListaTarefasJs/')">Sobre →</span>
+                    </div>
+                </article>
+
+                <!-- Projeto 3 -->
+                <article class="card-laptop">
+                    <div class="thumb-laptop"
+                        style="background-image: url('./img/imagem_2026-01-15_225317561-front.png');">
+                        <h3 class="h3-laptop" style="margin-top:55px;">Portfólio 3D</h3>
+                    </div>
+
+                    <div class="card-info-laptop">
+                        <span class="card-sobre-laptop"
+                            onclick="openModal('Portfólio 3D', 'Portfólio 3D desenvolvido utilizando HTML e CSS, explorando transformações tridimensionais, perspectiva e animações.', 'https://julianpedrodealexandre.github.io/Portfolio-3D/')">Sobre →</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <h2 id="modalTitle"></h2>
+            <p id="modalText"></p>
+
+            <br>
+            <span class="pill-modal">HTML</span>
+            <span class="pill-modal">CSS</span>
+            <span class="pill-modal">JavaScript</span>
+
+            <br>
+            <a id="modalLink" href="#" target="_blank" class="btn-github">Ver no GitHub</a>
+
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+    </div>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section-habilities">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+
+            <div class="skills-wrap">
+                <div class="pill-icon"><i class='bxl bx-html5'></i><span class="pill">HTML</span></div>
+                <div class="pill-icon"><i class='bxl bx-css3'></i><span class="pill">CSS</span></div>
+                <div class="pill-icon"><i class='bxl bx-javascript'></i><span class="pill">JavaScript</span></div>
+                <div class="pill-icon"><i class='bxl bx-react'></i><span class="pill">React</span></div>
+                <div class="pill-icon"><i class='bxl bx-bootstrap'></i><span class="pill">Bootstrap</span></div>
+                <div class="pill-icon"><i class='bxl bx-php'></i><span class="pill">PHP</span></div>
+                <div class="pill-icon"><i class='bxl bx-python'></i><span class="pill">Python</span></div>
+                <div class="pill-icon"><i class='bxl bx-git'></i><span class="pill">Git</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section contact">
+        <div class="container" style="max-width:720px;">
+            <h2 class="section-title">Contato</h2>
+
+            <form>
+                <input type="text" class="input" placeholder="Nome" required />
+                <input type="email" class="input" placeholder="Email" required />
+                <textarea class="input" placeholder="Mensagem" required></textarea>
+
+                <div class="actions">
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+            </form>
+
+            <div class="social">
+                <a href="https://www.linkedin.com/in/julian-pedro-de-alexandre-ab5a91269/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/JulianPedroDeAlexandre" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>© 2026 Julian - Desenvolvedor Front-End</footer>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
