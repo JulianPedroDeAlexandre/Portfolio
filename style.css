@@ -297,6 +297,19 @@ h3 {
     color: transparent;
 }
 
+.card-sobre {
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--accent-a), var(--accent-b));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+.card-sobre:hover {
+    opacity: .8;
+}
+
+
 
 @media (min-width: 768px) {
     .card {
@@ -419,4 +432,50 @@ footer {
     background: #0f1322;
 
 
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* mais alto */
+}
+
+.modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative; /* necessário */
+    z-index: 10000; /* garante sobreposição */
+}
+
+
+.close {
+    position: absolute;
+    right: 12px;
+    top: -3px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #000;
+    z-index: 10001;
+}
+.close:hover {
+    opacity: .6;
+}
+
+
+.btn-github {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 16px;
+    background: #232323;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
 }

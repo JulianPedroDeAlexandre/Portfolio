@@ -67,8 +67,7 @@
 
                     </div>
                     <div class="card-info">
-                        <a href="https://julianpedrodealexandre.github.io/Projeto-Plataforma-DeBugMe/"
-                            target="_blank">Ver no GitHub →</a>
+                        <span class="card-sobre"  onclick="openModal('Plataforma DeBugMe', 'Descrição do projeto...', 'https://julianpedrodealexandre.github.io/Projeto-Plataforma-DeBugMe/')">Sobre →</span>
                     </div>
                 </article>
                 
@@ -110,6 +109,17 @@
 
         </div>
     </section>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalText"></p>
+        <a id="modalLink" href="#" target="_blank" class="btn-github">GitHub</a>
+        <span class="close" onclick="closeModal()">&times;</span>
+
+    </div>
+</div>
 
     <!-- Habilidades -->
     <section id="habilidades" class="section-habilities">
@@ -175,7 +185,7 @@
         © 2026 Julian - Desenvolvedor Front-End
     </footer>
 
-    <script src="./scipt.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
