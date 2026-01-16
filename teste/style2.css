@@ -591,5 +591,66 @@ footer {
     display: none; /* oculta scrollbar */
 }
 
+/* --------------------------------------------------RESPONSIVIDADE-------------------------------------- */
+@media (max-width: 480px) {
+  h1 {
+    font-size: clamp(24px, 8vw, 32px);
+  }
+  h2 {
+    font-size: clamp(14px, 5vw, 18px);
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
 
-
+@media (max-width: 480px) {
+  .nav-links {
+    gap: 12px;
+  }
+  .nav-links a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .card-smartphone {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px auto;
+  }
+  .card-laptop {
+    width: 95%;
+    height: auto;
+    margin: 0 auto 20px auto;
+  }
+  .card-smartphone .thumb,
+  .card-laptop .thumb-laptop {
+    height: 200px; /* altura fixa mais amigável */
+  }
+}
+@media (max-width: 480px) {
+  .projects-grid {
+    gap: 20px;
+    padding: 0 10px 20px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 8px 0 8px;
+  }
+  .section-title {
+    margin-bottom: 40px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  .avatar-wrap {
+    margin: 0 auto;
+  }
+}
