@@ -262,8 +262,27 @@ body {
     transition: .3s ease;
 }
 
+.card-laptop {
+    width: 480px;
+    /* largura perfeita */
+    height: 420px;
+    /* proporção smartphone */
+    background: transparent;
+    border-radius: 32px;
+    /* padding: 14px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s ease;
+}
+
 .card-smartphone:hover {
     transform: translateY(-6px);
+}
+
+.card-laptop:hover{
+    transform: translateY(-6px);
+
 }
 
 /* Área que mostra o print do projeto */
@@ -276,9 +295,21 @@ body {
     border-radius: 22px;
 }
 
+.card-laptop .thumb-laptop {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 22px;
+}
 /* Texto inferior */
 .card-info {
     text-align: center;
+}
+.card-info-laptop {
+    text-align: center;
+    
 }
 
 h3 {
@@ -345,7 +376,18 @@ h3 {
     cursor: pointer;
     
 }
-.card-sobre:hover {
+
+.card-sobre-laptop {
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--accent-a), var(--accent-b));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    
+}
+
+.card-sobre:hover, .card-sobre-laptop:hover {
     opacity: .8;
 }
 
