@@ -590,9 +590,15 @@ footer {
 .projects-grid::-webkit-scrollbar {
     display: none; /* oculta scrollbar */
 }
-
+.h3-laptop{
+    margin-top: 55px;
+}
 /* --------------------------------------------------RESPONSIVIDADE-------------------------------------- */
 @media (max-width: 480px) {
+
+    body {
+    padding-top: 10px;
+}
   h1 {
     font-size: clamp(24px, 8vw, 32px);
   }
@@ -601,10 +607,15 @@ footer {
     text-align: center;
 
   }
+
+
   p {
     font-size: 14px;
     line-height: 1.4;
   }
+}
+.h3-laptop{
+    margin-top: 85px;
 }
 
 @media (max-width: 480px) {
@@ -619,7 +630,7 @@ footer {
   .card-smartphone {
     width: 100%;
     height: 100%;
-    margin: 20px auto 20px auto;
+    margin: 25px auto 20px auto;
   }
   .card-laptop {
     width: 90%;
@@ -633,8 +644,9 @@ footer {
 
   .card-laptop .thumb-laptop {
     width: 650px;
-    height: 610px; /* altura fixa mais amigável */
+    height: 530px; /* altura fixa mais amigável */
   }
+
 }
 @media (max-width: 480px) {
   .projects-grid {
