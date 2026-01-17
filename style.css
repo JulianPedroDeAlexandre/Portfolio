@@ -595,9 +595,14 @@ footer {
 }
 /* --------------------------------------------------RESPONSIVIDADE-------------------------------------- */
 @media (max-width: 480px) {
+   .nav-container {
+   
+    justify-content: center;
+    
+}
 
     body {
-    padding-top: 10px;
+    padding-top: 0;
 }
   h1 {
     font-size: clamp(24px, 8vw, 32px);
