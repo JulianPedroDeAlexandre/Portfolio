@@ -200,6 +200,13 @@ body {
     margin-bottom: 80px;
 }
 
+.section-title-projects{
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
 /* SOBRE MIM */
 .sobre {
     display: grid;
