@@ -28,6 +28,10 @@ p {
     margin-bottom: 12px;
 }
 
+.h3-laptop{
+    margin-top: 85px;
+}
+
 /* PALETA */
 :root {
     --bg: #0c0f1a;
@@ -618,10 +622,12 @@ footer {
     font-size: 14px;
     line-height: 1.4;
   }
-}
-.h3-laptop{
+
+  .h3-laptop{
     margin-top: 85px;
 }
+}
+
 
 @media (max-width: 480px) {
   .nav-links {
