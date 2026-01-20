@@ -181,11 +181,18 @@ body {
     color: #fff;
 }
 
+.section-projetos{
+    padding: 0 12px 0 12px;
+    background: var(--bg);
+    color: #fff;
+}
+
 .section-habilities {
     padding: 80px;
     background: var(--bg);
     color: #fff;
 }
+
 
 .container {
     width: 100%;
@@ -198,6 +205,7 @@ body {
     font-weight: 800;
     text-align: center;
     margin-bottom: 80px;
+    margin-top: 40px;
 }
 
 .section-title-projects{
@@ -338,6 +346,26 @@ h5{
     background-clip: text;
     margin-top: -50px;
     margin-bottom: 20px;
+}
+
+.paragraph-sobre{
+    margin-bottom: 130px;
+
+}
+
+.container-linha{
+    
+width: 100%;
+height: 60px;
+display: flex;
+justify-content: center;
+background-color: #0c0f1a;
+}
+
+.linha-divisora{
+    height: 3px;
+    width: 300px;
+    background: linear-gradient(135deg, var(--accent-a), var(--accent-b));
 }
 
 .card-info a{
@@ -641,6 +669,13 @@ footer {
 
   .h3-laptop{
     margin-top: 85px;
+}
+
+.section-title-projects{
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 35px;
 }
 }
 
