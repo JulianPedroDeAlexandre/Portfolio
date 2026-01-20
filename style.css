@@ -188,7 +188,7 @@ body {
 }
 
 .section-habilities {
-    padding: 80px;
+    padding: 60px;
     background: var(--bg);
     color: #fff;
 }
@@ -435,7 +435,22 @@ background-color: #0c0f1a;
     opacity: .8;
 }
 
+ .dir{
+        position:relative;
+        top: 200px;
+        left: 230px;
+        font-size: 20px;
+        display: none;
+    }
 
+    .esq {
+        position: relative;
+        top: 229px;
+        right: 1px;
+        font-size: 20px;
+        display: none;
+     
+    }
 
 @media (min-width: 768px) {
     .card {
@@ -445,6 +460,9 @@ background-color: #0c0f1a;
     .card__thumb {
         height: 160px;
     }
+    
+
+   
 }
 
 /* HABILIDADES */
@@ -618,7 +636,7 @@ footer {
 /* PROJETOS - CARROSSEL HORIZONTAL */
 .projects-grid {
     display: flex;
-    gap: 40px;
+    gap: 60px;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -689,6 +707,25 @@ footer {
   }
 }
 @media (max-width: 480px) {
+
+    .dir, .esq{
+        display: block;
+    }
+
+    .dir{
+        top: 260px;
+        left: 312px;
+        font-size: 30px;
+        color: #fff;
+        
+    }
+
+    .esq{
+        top: 294px;
+        right: 10px;
+        font-size: 30px;
+color: #fff;
+    }
   .card-smartphone {
     width: 100%;
     height: 100%;
