@@ -1,8 +1,17 @@
-// MODAL
-function openModal(title, text, link) {
+function openModal(title, text, link, techIcons) {
     document.getElementById("modalTitle").innerText = title;
     document.getElementById("modalText").innerText = text;
     document.getElementById("modalLink").href = link;
+    
+    const iconContainer = document.querySelector(".modal-icons-container");
+    iconContainer.innerHTML = "";
+
+    techIcons.forEach(iconClass => {
+        const icon = document.createElement("i");
+        icon.className = iconClass;
+        iconContainer.appendChild(icon);
+    });
+
     document.getElementById("modal").style.display = "flex";
 }
 
@@ -14,7 +23,6 @@ window.onclick = function(e) {
     if (e.target.id === "modal") closeModal();
 };
 
-// DRAG HORIZONTAL
 const slider = document.querySelector('.projects-grid');
 let isDown = false;
 let startX;
@@ -25,7 +33,6 @@ slider.addEventListener('mousedown', (e) => {
     slider.classList.add('active');
     startX = e.pageX;
     scrollLeft = slider.scrollLeft;
-    // evita seleção de texto durante o drag
     slider.style.userSelect = 'none';
 });
 
@@ -45,6 +52,6 @@ slider.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX;
-    const walk = (x - startX) * 1.5; // velocidade mais suave
+    const walk = (x - startX) * 1.5; 
     slider.scrollLeft = scrollLeft - walk;
 });
