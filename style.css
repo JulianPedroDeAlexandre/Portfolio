@@ -385,6 +385,8 @@ background-color: #0c0f1a;
     margin-top: 15px;
     padding: 10px 16px;
     background: #1b2035;
+        /* background: linear-gradient(135deg, var(--accent-a), var(--accent-b)); */
+
     color: #fff;
     border-radius: 10px;
     text-decoration: none;
@@ -607,8 +609,8 @@ footer {
 }
 
 .modal-content {
-        background: linear-gradient(135deg, var(--accent-a), var(--accent-b));
-
+        /* background: linear-gradient(135deg, var(--accent-a), var(--accent-b)); */
+    background: #fff;
     width: 90%;
     max-width: 500px;
     padding: 20px;
@@ -617,7 +619,9 @@ footer {
     z-index: 10000; /* garante sobreposição */
     color: #0c0f1a;
 }
-
+.modal-content i{
+    font-size: 35px;
+}
 
 .close {
     position: absolute;
