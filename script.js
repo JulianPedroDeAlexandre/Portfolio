@@ -55,3 +55,33 @@ slider.addEventListener('mousemove', (e) => {
     const walk = (x - startX) * 1.5; 
     slider.scrollLeft = scrollLeft - walk;
 });
+
+    document.getElementById("whatsappForm").addEventListener("submit", function(event){
+      event.preventDefault();
+
+      let nome = document.getElementById("nome").value;
+      let mensagem = document.getElementById("mensagem").value;
+
+      let telefone = "5554991728377"; 
+
+      let texto = `Olá, meu nome é ${nome}. ${mensagem}`;
+      let url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
+
+      window.open(url, "_blank");
+    });
+
+// document.getElementById("emailForm").addEventListener("submit", function(event){
+//     event.preventDefault();
+
+//     let nome = document.getElementById("nome").value;
+//     let email = document.getElementById("nomeEmail").value;
+//     let mensagem = document.getElementById("mensagem").value;
+
+//     let destinatario = "julian.zep@gmail.com";
+//     let assunto = "Mensagem do formulário";
+//     let corpo = `Nome: ${nome}\nEmail: ${email}\n\nMensagem:\n${mensagem}`;
+
+//     let url = `mailto:${destinatario}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
+
+//     window.location.href = url;
+// });

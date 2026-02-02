@@ -87,7 +87,7 @@
                             →</span>
                     </div>
                 </article>
-                <!-- projeto 5 -->
+<!-- projeto 5 -->
                 <article class="card-smartphone">
                     <div class="thumb"
                         style="background-image: url('./img/WhatsApp\ Image\ 2026-01-21\ at\ 16.01.15-portrait.png')">
@@ -127,7 +127,7 @@
                             →</span>
                     </div>
                 </article>
-                <!-- projeto 2 -->
+<!-- projeto 2 -->
                 <article class="card-smartphone">
                     <div class="thumb"
                         style="background-image: url('./img/WhatsApp\ Image\ 2026-01-15\ at\ 21.52.43-portrait.png');">
@@ -137,6 +137,18 @@
                     <div class="card-info">
                         <span class="card-sobre"
                             onclick="openModal('To Do List', 'To Do List é um sistema de gerenciamento de tarefas que permite atribuir níveis de prioridade, filtrar itens por status de conclusão e persistir os dados localmente utilizando localStorage, garantindo que as informações permaneçam disponíveis mesmo após o encerramento da sessão do navegador. ', 'https://julianpedrodealexandre.github.io/ListaTarefasJs/', ['bx bxl-html5', 'bx bxl-css3', 'bx bxl-javascript'])">Sobre
+                            →</span>
+                    </div>
+                </article>
+ <!-- projeto 6------>
+                <article class="card-smartphone">
+                    <div class="thumb"
+                        style="background-image: url('./img/WhatsApp\ Image\ 2026-01-22\ at\ 11.49.01-portrait.png');">
+                        <h3>Relógio De Ponto</h3>
+                    </div>
+                    <div class="card-info">
+                        <span class="card-sobre"
+                            onclick="openModal('Rélogio De Ponto ', 'Este projeto implementa um sistema de registro de ponto baseado em lógica de eventos, persistência local e renderização dinâmica utilizando JavaScript. A aplicação foi projetada para demonstrar um fluxo de dados estruturado, combinando manipulação eficiente do DOM, orientação a objetos para modelagem dos registros, e uso do LocalStorage para armazenamento persistente. Além disso, o projeto explora estruturas de dados como arrays e objetos para organizar, buscar e atualizar informações em tempo real, garantindo uma experiência interativa e responsiva. ', 'https://julianpedrodealexandre.github.io/Relogio-de-Ponto/', ['bx bxl-html5', 'bx bxl-css3', 'bx bxl-javascript'])">Sobre
                             →</span>
                     </div>
                 </article>
@@ -210,11 +222,12 @@
     <!-- Contato -->
     <section id="contato" class="section contact">
         <div class="container" style="max-width: 720px;">
-            <h2 class="section-title">Contato</h2>
-            <form>
-                <input type="text" class="input" placeholder="Nome" required />
-                <input type="email" class="input" placeholder="Email" required />
-                <textarea class="input" placeholder="Mensagem" required></textarea>
+            <h2 class="section-title">Contato via WhatsApp</h2>
+            <!-- <form id="emailForm"> -->
+            <form id="whatsappForm">
+                <input type="text" id="nome" class="input" placeholder="Nome" required />
+                <!-- <input type="email" id="nomeEmail" class="input" placeholder="Email" required /> -->
+                <textarea id="mensagem" class="input" placeholder="Mensagem" required></textarea>
                 <div class="actions">
                     <button type="submit" class="btn">Enviar</button>
                 </div>
