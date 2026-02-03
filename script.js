@@ -70,6 +70,8 @@ slider.addEventListener('mousemove', (e) => {
       window.open(url, "_blank");
     });
 
+
+//Parte de envio por email    
 // document.getElementById("emailForm").addEventListener("submit", function(event){
 //     event.preventDefault();
 
